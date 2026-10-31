@@ -1,0 +1,226 @@
+{
+ "format_version": "1.8.0",
+ "animations": {
+  "animation.gotsumon.idle": {
+   "loop": true,
+   "animation_length": 2.6,
+   "bones": {
+    "body": {
+     "position": [
+      "0",
+      "0 + math.sin((query.anim_time / 2.6) * 360 + 0.0) * 0.325",
+      "0"
+     ]
+    },
+    "head": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 2.6) * 360 + 60) * 2",
+      "0",
+      "0"
+     ]
+    },
+    "tail": {
+     "rotation": [
+      "0",
+      "0 + math.sin((query.anim_time / 2.6) * 360 + 0.0) * 6",
+      "0"
+     ]
+    },
+    "tail_tip": {
+     "rotation": [
+      "0",
+      "0 + math.sin((query.anim_time / 2.6) * 360 + 45) * 8",
+      "0"
+     ]
+    },
+    "arm_left": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 2.6) * 360 + 0.0) * 3",
+      "0",
+      "0"
+     ]
+    },
+    "arm_right": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 2.6) * 360 + 180) * 3",
+      "0",
+      "0"
+     ]
+    }
+   }
+  },
+  "animation.gotsumon.walk": {
+   "loop": true,
+   "animation_length": 1.04,
+   "bones": {
+    "leg_left": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 1.04) * 360 + 0.0) * 23.076923076923077",
+      "0",
+      "0"
+     ]
+    },
+    "leg_right": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 1.04) * 360 + 180) * 23.076923076923077",
+      "0",
+      "0"
+     ]
+    },
+    "arm_left": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 1.04) * 360 + 180) * 15.384615384615383",
+      "0",
+      "0"
+     ]
+    },
+    "arm_right": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 1.04) * 360 + 0.0) * 15.384615384615383",
+      "0",
+      "0"
+     ]
+    },
+    "body": {
+     "position": [
+      "0",
+      "0 + math.sin((query.anim_time / 0.52) * 360 + 0.0) * 0.65",
+      "0"
+     ],
+     "rotation": [
+      "0",
+      "0",
+      "0 + math.sin((query.anim_time / 1.04) * 360 + 0.0) * 3"
+     ]
+    },
+    "head": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 0.52) * 360 + 0.0) * 3",
+      "0",
+      "0"
+     ]
+    },
+    "tail": {
+     "rotation": [
+      "0",
+      "0 + math.sin((query.anim_time / 1.04) * 360 + 0.0) * 10",
+      "0"
+     ]
+    },
+    "tail_tip": {
+     "rotation": [
+      "0",
+      "0 + math.sin((query.anim_time / 1.04) * 360 + 60) * 12",
+      "0"
+     ]
+    }
+   }
+  },
+  "animation.gotsumon.attack": {
+   "loop": false,
+   "animation_length": 0.4,
+   "bones": {
+    "body": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.12": [
+       12,
+       0,
+       0
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "head": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.1": [
+       -15,
+       0,
+       0
+      ],
+      "0.2": [
+       10,
+       0,
+       0
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "arm_left": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.12": [
+       -60,
+       0,
+       -10
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "arm_right": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.12": [
+       -60,
+       0,
+       10
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "tail": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.12": [
+       -10,
+       0,
+       0
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    }
+   }
+  }
+ }
+}

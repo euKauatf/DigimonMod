@@ -1,0 +1,34 @@
+# Metadados do mod lidos pelo NeoForge. Os valores entre chaves vêm de gradle.properties.
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="Projeto pessoal"
+description='''
+Seja um Digimon no Minecraft: explore, sobreviva, lute e digievolua.
+Inspirado em Digimon Aurity (Roblox).
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+# Modelos e animações dos Digimon
+[[dependencies.${mod_id}]]
+    modId="geckolib"
+    type="required"
+    versionRange="[${geckolib_version},)"
+    ordering="NONE"
+    side="BOTH"

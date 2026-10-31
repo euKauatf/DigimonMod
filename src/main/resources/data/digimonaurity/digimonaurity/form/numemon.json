@@ -1,0 +1,6 @@
+{
+  "stage": "rookie",
+  "body": { "width": 0.8, "height": 1.0, "eye_height": 0.8 },
+  "stats": { "max_health": 16, "basic_damage": 2.0, "speed": 0.8 },
+  "attacks": ["digimonaurity:nume_sludge"]
+}

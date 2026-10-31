@@ -1,0 +1,226 @@
+{
+ "format_version": "1.8.0",
+ "animations": {
+  "animation.greymon.idle": {
+   "loop": true,
+   "animation_length": 3.2,
+   "bones": {
+    "body": {
+     "position": [
+      "0",
+      "0 + math.sin((query.anim_time / 3.2) * 360 + 0.0) * 0.4",
+      "0"
+     ]
+    },
+    "head": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 3.2) * 360 + 60) * 2",
+      "0",
+      "0"
+     ]
+    },
+    "tail": {
+     "rotation": [
+      "0",
+      "0 + math.sin((query.anim_time / 3.2) * 360 + 0.0) * 6",
+      "0"
+     ]
+    },
+    "tail_tip": {
+     "rotation": [
+      "0",
+      "0 + math.sin((query.anim_time / 3.2) * 360 + 45) * 8",
+      "0"
+     ]
+    },
+    "arm_left": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 3.2) * 360 + 0.0) * 3",
+      "0",
+      "0"
+     ]
+    },
+    "arm_right": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 3.2) * 360 + 180) * 3",
+      "0",
+      "0"
+     ]
+    }
+   }
+  },
+  "animation.greymon.walk": {
+   "loop": true,
+   "animation_length": 1.2800000000000002,
+   "bones": {
+    "leg_left": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 1.2800000000000002) * 360 + 0.0) * 18.75",
+      "0",
+      "0"
+     ]
+    },
+    "leg_right": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 1.2800000000000002) * 360 + 180) * 18.75",
+      "0",
+      "0"
+     ]
+    },
+    "arm_left": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 1.2800000000000002) * 360 + 180) * 12.5",
+      "0",
+      "0"
+     ]
+    },
+    "arm_right": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 1.2800000000000002) * 360 + 0.0) * 12.5",
+      "0",
+      "0"
+     ]
+    },
+    "body": {
+     "position": [
+      "0",
+      "0 + math.sin((query.anim_time / 0.6400000000000001) * 360 + 0.0) * 0.8",
+      "0"
+     ],
+     "rotation": [
+      "0",
+      "0",
+      "0 + math.sin((query.anim_time / 1.2800000000000002) * 360 + 0.0) * 3"
+     ]
+    },
+    "head": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 0.6400000000000001) * 360 + 0.0) * 3",
+      "0",
+      "0"
+     ]
+    },
+    "tail": {
+     "rotation": [
+      "0",
+      "0 + math.sin((query.anim_time / 1.2800000000000002) * 360 + 0.0) * 10",
+      "0"
+     ]
+    },
+    "tail_tip": {
+     "rotation": [
+      "0",
+      "0 + math.sin((query.anim_time / 1.2800000000000002) * 360 + 60) * 12",
+      "0"
+     ]
+    }
+   }
+  },
+  "animation.greymon.attack": {
+   "loop": false,
+   "animation_length": 0.4,
+   "bones": {
+    "body": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.12": [
+       12,
+       0,
+       0
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "head": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.1": [
+       -15,
+       0,
+       0
+      ],
+      "0.2": [
+       10,
+       0,
+       0
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "arm_left": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.12": [
+       -60,
+       0,
+       -10
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "arm_right": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.12": [
+       -60,
+       0,
+       10
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "tail": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.12": [
+       -10,
+       0,
+       0
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    }
+   }
+  }
+ }
+}

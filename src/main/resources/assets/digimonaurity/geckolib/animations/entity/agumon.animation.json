@@ -1,0 +1,226 @@
+{
+ "format_version": "1.8.0",
+ "animations": {
+  "animation.agumon.idle": {
+   "loop": true,
+   "animation_length": 2.0,
+   "bones": {
+    "body": {
+     "position": [
+      "0",
+      "0 + math.sin((query.anim_time / 2.0) * 360 + 0.0) * 0.25",
+      "0"
+     ]
+    },
+    "head": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 2.0) * 360 + 60) * 2",
+      "0",
+      "0"
+     ]
+    },
+    "tail": {
+     "rotation": [
+      "0",
+      "0 + math.sin((query.anim_time / 2.0) * 360 + 0.0) * 6",
+      "0"
+     ]
+    },
+    "tail_tip": {
+     "rotation": [
+      "0",
+      "0 + math.sin((query.anim_time / 2.0) * 360 + 45) * 8",
+      "0"
+     ]
+    },
+    "arm_left": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 2.0) * 360 + 0.0) * 3",
+      "0",
+      "0"
+     ]
+    },
+    "arm_right": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 2.0) * 360 + 180) * 3",
+      "0",
+      "0"
+     ]
+    }
+   }
+  },
+  "animation.agumon.walk": {
+   "loop": true,
+   "animation_length": 0.8,
+   "bones": {
+    "leg_left": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 0.8) * 360 + 0.0) * 30.0",
+      "0",
+      "0"
+     ]
+    },
+    "leg_right": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 0.8) * 360 + 180) * 30.0",
+      "0",
+      "0"
+     ]
+    },
+    "arm_left": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 0.8) * 360 + 180) * 20.0",
+      "0",
+      "0"
+     ]
+    },
+    "arm_right": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 0.8) * 360 + 0.0) * 20.0",
+      "0",
+      "0"
+     ]
+    },
+    "body": {
+     "position": [
+      "0",
+      "0 + math.sin((query.anim_time / 0.4) * 360 + 0.0) * 0.5",
+      "0"
+     ],
+     "rotation": [
+      "0",
+      "0",
+      "0 + math.sin((query.anim_time / 0.8) * 360 + 0.0) * 3"
+     ]
+    },
+    "head": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 0.4) * 360 + 0.0) * 3",
+      "0",
+      "0"
+     ]
+    },
+    "tail": {
+     "rotation": [
+      "0",
+      "0 + math.sin((query.anim_time / 0.8) * 360 + 0.0) * 10",
+      "0"
+     ]
+    },
+    "tail_tip": {
+     "rotation": [
+      "0",
+      "0 + math.sin((query.anim_time / 0.8) * 360 + 60) * 12",
+      "0"
+     ]
+    }
+   }
+  },
+  "animation.agumon.attack": {
+   "loop": false,
+   "animation_length": 0.4,
+   "bones": {
+    "body": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.12": [
+       12,
+       0,
+       0
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "head": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.1": [
+       -15,
+       0,
+       0
+      ],
+      "0.2": [
+       10,
+       0,
+       0
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "arm_left": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.12": [
+       -60,
+       0,
+       -10
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "arm_right": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.12": [
+       -60,
+       0,
+       10
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "tail": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.12": [
+       -10,
+       0,
+       0
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    }
+   }
+  }
+ }
+}

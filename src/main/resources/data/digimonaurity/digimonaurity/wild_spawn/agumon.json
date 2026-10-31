@@ -1,0 +1,7 @@
+{
+  "biomes": ["minecraft:desert", "minecraft:savanna", "minecraft:savanna_plateau", "minecraft:windswept_savanna",
+             "minecraft:badlands", "minecraft:eroded_badlands", "minecraft:wooded_badlands"],
+  "line": "digimonaurity:agumon",
+  "form": "digimonaurity:agumon",
+  "weight": 10
+}

@@ -1,0 +1,6 @@
+{
+  "biomes": ["minecraft:desert", "minecraft:savanna", "minecraft:savanna_plateau", "minecraft:badlands"],
+  "line": "digimonaurity:agumon",
+  "form": "digimonaurity:koromon",
+  "weight": 6
+}

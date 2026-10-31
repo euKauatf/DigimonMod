@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "digimonaurity:block/crest_pedestal_top",
+    "bottom": "digimonaurity:block/crest_pedestal_side",
+    "side": "digimonaurity:block/crest_pedestal_side"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "element": "fire",
+  "damage": 10.0,
+  "cooldown": 60,
+  "speed": 1.8,
+  "range": 30,
+  "effect_seconds": 4
+}

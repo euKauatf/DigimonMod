@@ -1,0 +1,7 @@
+{
+  "stage": "rookie",
+  "body": { "width": 0.7, "height": 1.4, "eye_height": 1.2 },
+  "min_level": 6,
+  "stats": { "max_health": 20, "basic_damage": 3.0, "speed": 1.0, "fire_resistance": 0.5 },
+  "attacks": ["digimonaurity:pepper_breath"]
+}

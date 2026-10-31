@@ -1,0 +1,103 @@
+{
+ "format_version": "1.8.0",
+ "animations": {
+  "animation.numemon.idle": {
+   "loop": true,
+   "animation_length": 2.0,
+   "bones": {
+    "body": {
+     "scale": [
+      "1",
+      "1 + math.sin(query.anim_time / 2 * 360) * 0.04",
+      "1"
+     ]
+    },
+    "eyes": {
+     "rotation": [
+      "0",
+      "0",
+      "0 + math.sin((query.anim_time / 2.0) * 360 + 0.0) * 8"
+     ]
+    }
+   }
+  },
+  "animation.numemon.walk": {
+   "loop": true,
+   "animation_length": 0.8,
+   "bones": {
+    "body": {
+     "scale": [
+      "1",
+      "1 - math.sin(query.anim_time / 0.8 * 360) * 0.06",
+      "1 + math.sin(query.anim_time / 0.8 * 360) * 0.08"
+     ]
+    },
+    "eyes": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 0.8) * 360 + 0.0) * 10",
+      "0",
+      "0"
+     ]
+    },
+    "arm_left": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 0.8) * 360 + 0.0) * 30",
+      "0",
+      "0"
+     ]
+    },
+    "arm_right": {
+     "rotation": [
+      "0 + math.sin((query.anim_time / 0.8) * 360 + 180) * 30",
+      "0",
+      "0"
+     ]
+    }
+   }
+  },
+  "animation.numemon.attack": {
+   "loop": false,
+   "animation_length": 0.4,
+   "bones": {
+    "body": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.15": [
+       -15,
+       0,
+       0
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "arm_right": {
+     "rotation": {
+      "0.0": [
+       0,
+       0,
+       0
+      ],
+      "0.15": [
+       -120,
+       0,
+       0
+      ],
+      "0.4": [
+       0,
+       0,
+       0
+      ]
+     }
+    }
+   }
+  }
+ }
+}

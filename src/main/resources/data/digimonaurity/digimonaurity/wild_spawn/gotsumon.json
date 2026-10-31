@@ -1,0 +1,8 @@
+{
+  "biomes": ["minecraft:windswept_hills", "minecraft:windswept_gravelly_hills", "minecraft:windswept_forest",
+             "minecraft:stony_peaks", "minecraft:stony_shore", "minecraft:jagged_peaks", "minecraft:dripstone_caves"],
+  "line": "digimonaurity:gotsumon",
+  "form": "digimonaurity:gotsumon",
+  "weight": 10,
+  "aggressive": true
+}

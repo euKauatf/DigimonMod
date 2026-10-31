@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "digimonaurity:territory_arena",
+  "step": "surface_structures"
+}

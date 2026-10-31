@@ -1,0 +1,23 @@
+{
+  "stage": "champion",
+  "body": {
+    "width": 1.2,
+    "height": 1.5,
+    "eye_height": 1.3
+  },
+  "min_level": 15,
+  "stats": {
+    "max_health": 32,
+    "basic_damage": 5.0,
+    "speed": 1.3,
+    "hunger_drain": 0.004,
+    "cold_resistance": 1.0,
+    "frost_walker": true
+  },
+  "attacks": [
+    "digimonaurity:howling_blaster"
+  ],
+  "requires": [
+    "digimonaurity:territory_boss"
+  ]
+}

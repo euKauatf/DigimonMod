@@ -1,0 +1,8 @@
+{
+  "biomes": ["minecraft:snowy_plains", "minecraft:snowy_taiga", "minecraft:ice_spikes", "minecraft:snowy_slopes",
+             "minecraft:frozen_peaks", "minecraft:grove", "minecraft:taiga", "minecraft:old_growth_pine_taiga",
+             "minecraft:old_growth_spruce_taiga", "minecraft:snowy_beach", "minecraft:frozen_river"],
+  "line": "digimonaurity:gabumon",
+  "form": "digimonaurity:gabumon",
+  "weight": 10
+}

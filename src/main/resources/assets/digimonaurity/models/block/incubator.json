@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "digimonaurity:block/incubator_top",
+    "bottom": "digimonaurity:block/incubator_bottom",
+    "side": "digimonaurity:block/incubator_side"
+  }
+}

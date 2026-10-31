@@ -1,0 +1,8 @@
+{
+  "element": "ice",
+  "damage": 8.0,
+  "cooldown": 50,
+  "speed": 2.0,
+  "range": 30,
+  "effect_seconds": 4
+}

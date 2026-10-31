@@ -1,0 +1,13 @@
+{
+  "forms": [
+    "digimonaurity:botamon",
+    "digimonaurity:koromon",
+    "digimonaurity:agumon",
+    "digimonaurity:greymon",
+    "digimonaurity:metalgreymon",
+    "digimonaurity:wargreymon"
+  ],
+  "starting_form": "digimonaurity:botamon",
+  "starter": true,
+  "color": "#F4A62A"
+}

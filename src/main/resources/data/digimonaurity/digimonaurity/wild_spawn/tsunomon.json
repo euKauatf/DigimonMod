@@ -1,0 +1,6 @@
+{
+  "biomes": ["minecraft:snowy_plains", "minecraft:snowy_taiga", "minecraft:taiga", "minecraft:grove"],
+  "line": "digimonaurity:gabumon",
+  "form": "digimonaurity:tsunomon",
+  "weight": 6
+}

@@ -1,0 +1,8 @@
+{
+  "stage": "ultimate",
+  "body": { "width": 1.5, "height": 2.8, "eye_height": 2.4 },
+  "min_level": 30,
+  "stats": { "max_health": 48, "basic_damage": 9.0, "speed": 0.9, "hunger_drain": 0.006, "fire_resistance": 0.9, "glide": true },
+  "attacks": ["digimonaurity:giga_destroyer"],
+  "requires": ["digimonaurity:chrome_digizoid"]
+}
