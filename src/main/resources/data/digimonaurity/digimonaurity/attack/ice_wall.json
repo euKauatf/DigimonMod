@@ -1,0 +1,1 @@
+{ "type": "area", "element": "ice", "damage": 12.0, "cooldown": 100, "radius": 5, "effect_seconds": 5 }

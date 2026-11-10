@@ -6,5 +6,5 @@ set "GRADLE_USER_HOME=%~dp0.tmp\gradle-home"
 set "GRADLE_OPTS=-Djdk.net.unixdomain.tmpdir=%~dp0.tmp\jtmp"
 if not exist "%TEMP%" mkdir "%TEMP%"
 cd /d "%~dp0"
-call gradlew.bat runClient
+call "%~dp0gradlew.bat" runClient
 pause

@@ -10,62 +10,80 @@
       "1 + math.sin(query.anim_time / 1.6 * 360) * 0.04",
       "1 - math.sin(query.anim_time / 1.6 * 360) * 0.05",
       "1 + math.sin(query.anim_time / 1.6 * 360) * 0.04"
-     ]
-    },
-    "feelers": {
+     ],
      "rotation": [
       "0",
       "0",
-      "0 + math.sin((query.anim_time / 1.6) * 360 + 0.0) * 8"
+      "0.0 + math.sin(query.anim_time / 1.6 * 360 + 0.0) * 2"
      ]
     }
    }
   },
   "animation.punimon.walk": {
    "loop": true,
-   "animation_length": 0.5,
+   "animation_length": 0.6,
    "bones": {
     "body": {
      "position": [
-      "0",
-      "math.abs(math.sin(query.anim_time / 0.5 * 180)) * 2.5",
-      "0"
+      0,
+      "math.abs(math.sin(query.anim_time / 0.6 * 180)) * 3",
+      0
      ],
      "scale": [
       "1",
-      "1 + math.abs(math.sin(query.anim_time / 0.5 * 180)) * 0.08",
+      "1 + math.sin(query.anim_time / 0.6 * 360) * 0.08",
       "1"
-     ]
-    },
-    "feelers": {
-     "rotation": [
-      "0",
-      "0",
-      "0 + math.sin((query.anim_time / 0.5) * 360 + 0.0) * 15"
      ]
     }
    }
   },
   "animation.punimon.attack": {
    "loop": false,
-   "animation_length": 0.3,
+   "animation_length": 0.4,
    "bones": {
     "body": {
      "scale": {
       "0.0": [
-       1,
-       1,
-       1
+       1.0,
+       1.0,
+       1.0
       ],
-      "0.1": [
+      "0.12": [
+       1.2,
+       0.8,
+       1.2
+      ],
+      "0.25": [
+       0.9,
        1.15,
-       0.85,
-       1.15
+       0.9
       ],
-      "0.3": [
-       1,
-       1,
-       1
+      "0.4": [
+       1.0,
+       1.0,
+       1.0
+      ]
+     },
+     "position": {
+      "0.0": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "0.12": [
+       0.0,
+       0.0,
+       -2.0
+      ],
+      "0.25": [
+       0.0,
+       2.0,
+       -3.0
+      ],
+      "0.4": [
+       0.0,
+       0.0,
+       0.0
       ]
      }
     }

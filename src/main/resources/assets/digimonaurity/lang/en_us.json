@@ -109,5 +109,21 @@
   "message.digimonaurity.crest_obtained": "You earned the %s!",
   "message.digimonaurity.guardian_appeared": "The Crest Guardian has awakened!",
   "message.digimonaurity.too_hungry_to_fly": "Too hungry to fly!",
-  "hud.digimonaurity.sense.temple": "Signal: Crest Temple"
+  "hud.digimonaurity.sense.temple": "Signal: Crest Temple",
+  "attack.digimonaurity.sharp_claw": "Sharp Claw",
+  "attack.digimonaurity.great_horn": "Great Horn",
+  "attack.digimonaurity.mega_flame": "Mega Flame",
+  "attack.digimonaurity.trident_arm": "Trident Arm",
+  "attack.digimonaurity.metal_inferno": "Metal Inferno",
+  "attack.digimonaurity.great_tornado": "Great Tornado",
+  "attack.digimonaurity.mega_claw": "Mega Claw",
+  "attack.digimonaurity.petit_horn": "Petit Horn",
+  "attack.digimonaurity.slamming_attack": "Slamming Attack",
+  "attack.digimonaurity.frost_howl": "Frost Howl",
+  "attack.digimonaurity.wolf_claw": "Wolf Claw",
+  "attack.digimonaurity.full_moon_kick": "Full Moon Kick",
+  "attack.digimonaurity.garuru_tomahawk": "Garuru Tomahawk",
+  "attack.digimonaurity.ice_wall": "Ice Wall",
+  "message.digimonaurity.no_armor": "Digimon don't wear armor: it went back to your inventory.",
+  "message.digimonaurity.no_weapons": "Digimon don't use weapons: fight with your attacks (Z, X, C) and claws!"
 }

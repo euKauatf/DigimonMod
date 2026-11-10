@@ -1,8 +1,25 @@
 {
   "stage": "mega",
-  "body": { "width": 0.9, "height": 2.3, "eye_height": 2.05 },
+  "body": {
+    "width": 1.0,
+    "height": 2.45,
+    "eye_height": 2.2
+  },
   "min_level": 50,
-  "stats": { "max_health": 64, "basic_damage": 14.0, "speed": 1.15, "hunger_drain": 0.008, "fire_resistance": 1.0, "flight": true },
-  "attacks": ["digimonaurity:terra_force"],
-  "requires": ["digimonaurity:crest"]
+  "stats": {
+    "max_health": 64,
+    "basic_damage": 14.0,
+    "speed": 1.15,
+    "hunger_drain": 0.008,
+    "fire_resistance": 1.0,
+    "flight": true
+  },
+  "attacks": [
+    "digimonaurity:terra_force",
+    "digimonaurity:great_tornado",
+    "digimonaurity:mega_claw"
+  ],
+  "requires": [
+    "digimonaurity:crest"
+  ]
 }

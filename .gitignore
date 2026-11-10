@@ -41,3 +41,10 @@ repo/
 
 ### Projeto ###
 .tmp/
+distribuicao/mods/
+
+### Saídas geradas dos scripts de modelo (regeneráveis) ###
+tools/modelos/saida/
+tools/modelos/saida_v2/
+tools/modelos/__pycache__/
+__pycache__/

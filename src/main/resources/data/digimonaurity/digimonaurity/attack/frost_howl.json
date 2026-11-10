@@ -1,0 +1,1 @@
+{ "type": "cone", "element": "ice", "damage": 6.0, "cooldown": 80, "range": 6, "effect_seconds": 4 }

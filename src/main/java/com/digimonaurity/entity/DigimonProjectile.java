@@ -1,5 +1,6 @@
 package com.digimonaurity.entity;
 
+import com.digimonaurity.combat.AttackEffects;
 import com.digimonaurity.digimon.DigimonAttack;
 import com.digimonaurity.registry.DigimonRegistries;
 
@@ -8,8 +9,6 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -124,31 +123,9 @@ public class DigimonProjectile extends ThrowableItemProjectile {
     protected void onHitEntity(EntityHitResult hitResult) {
         super.onHitEntity(hitResult);
         Entity target = hitResult.getEntity();
-        target.hurt(damageSources().thrown(this, getOwner()), damage);
-        if (effectSeconds > 0) {
-            switch (element()) {
-                case FIRE -> target.igniteForSeconds(effectSeconds);
-                case ICE -> {
-                    if (target instanceof LivingEntity living) {
-                        living.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, effectSeconds * 20, 1), getOwner());
-                        living.setTicksFrozen(Math.max(living.getTicksFrozen(), effectSeconds * 20));
-                    }
-                }
-                case POISON -> {
-                    if (target instanceof LivingEntity living) {
-                        living.addEffect(new MobEffectInstance(MobEffects.POISON, effectSeconds * 20, 0), getOwner());
-                    }
-                }
-                case EARTH -> {
-                    if (target instanceof LivingEntity living) {
-                        living.knockback(0.6, getX() - target.getX(), getZ() - target.getZ(),
-                                damageSources().thrown(this, getOwner()), damage);
-                    }
-                }
-                case BUBBLE, NONE -> {
-                }
-            }
-        }
+        DigimonAttack hit = new DigimonAttack(DigimonAttack.Type.PROJECTILE, element(), damage, 0, 1f, 1f, 1f, effectSeconds);
+        AttackEffects.hit(target, damageSources().thrown(this, getOwner()), hit, getOwner(),
+                getX() - target.getX(), getZ() - target.getZ());
     }
 
     @Override

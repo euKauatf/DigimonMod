@@ -14,7 +14,9 @@
     "fire_resistance": 0.8
   },
   "attacks": [
-    "digimonaurity:nova_blast"
+    "digimonaurity:nova_blast",
+    "digimonaurity:great_horn",
+    "digimonaurity:mega_flame"
   ],
   "requires": [
     "digimonaurity:territory_boss"

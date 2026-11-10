@@ -1,0 +1,1 @@
+{ "type": "cone", "element": "fire", "damage": 7.0, "cooldown": 80, "range": 6, "effect_seconds": 4 }

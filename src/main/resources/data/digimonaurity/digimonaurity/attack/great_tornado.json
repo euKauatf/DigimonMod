@@ -1,0 +1,1 @@
+{ "type": "area", "element": "fire", "damage": 14.0, "cooldown": 100, "radius": 5, "effect_seconds": 4 }

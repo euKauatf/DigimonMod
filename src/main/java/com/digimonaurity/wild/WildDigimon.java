@@ -461,7 +461,11 @@ public class WildDigimon extends Monster implements GeoEntity {
                     || !(level() instanceof ServerLevel level)) {
                 return;
             }
-            DigimonAttack attack = lookup(DigimonRegistries.ATTACK, form.attacks().getFirst());
+            // Selvagens usam o primeiro ataque de projétil da forma (os outros tipos são para jogadores)
+            DigimonAttack attack = form.attacks().stream()
+                    .map(id -> lookup(DigimonRegistries.ATTACK, id))
+                    .filter(a -> a != null && a.type() == DigimonAttack.Type.PROJECTILE)
+                    .findFirst().orElse(null);
             if (attack == null) {
                 return;
             }

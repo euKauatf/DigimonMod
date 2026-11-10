@@ -1,7 +1,20 @@
 {
   "stage": "rookie",
-  "body": { "width": 0.7, "height": 1.4, "eye_height": 1.2 },
+  "body": {
+    "width": 0.8,
+    "height": 1.5,
+    "eye_height": 1.25
+  },
   "min_level": 6,
-  "stats": { "max_health": 20, "basic_damage": 3.0, "speed": 1.05, "cold_resistance": 1.0, "frost_walker": true },
-  "attacks": ["digimonaurity:blue_blaster"]
+  "stats": {
+    "max_health": 20,
+    "basic_damage": 3.0,
+    "speed": 1.05,
+    "cold_resistance": 1.0,
+    "frost_walker": true
+  },
+  "attacks": [
+    "digimonaurity:blue_blaster",
+    "digimonaurity:petit_horn"
+  ]
 }

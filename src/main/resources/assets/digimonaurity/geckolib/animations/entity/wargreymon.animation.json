@@ -3,46 +3,53 @@
  "animations": {
   "animation.wargreymon.idle": {
    "loop": true,
-   "animation_length": 2.0,
+   "animation_length": 2.88,
    "bones": {
     "body": {
      "position": [
       "0",
-      "0 + math.sin((query.anim_time / 2.0) * 360 + 0.0) * 0.25",
+      "0.0 + math.sin(query.anim_time / 2.88 * 360 + 0.0) * 0.25",
       "0"
      ]
     },
     "head": {
      "rotation": [
-      "0 + math.sin((query.anim_time / 2.0) * 360 + 60) * 2",
+      "0.0 + math.sin(query.anim_time / 2.88 * 360 + 90) * 2.5",
       "0",
       "0"
+     ]
+    },
+    "arm_left": {
+     "rotation": [
+      "0",
+      "0",
+      "-2 + math.sin(query.anim_time / 2.88 * 360 + 0.0) * 3"
+     ]
+    },
+    "arm_right": {
+     "rotation": [
+      "0",
+      "0",
+      "2 + math.sin(query.anim_time / 2.88 * 360 + 180) * 3"
      ]
     },
     "tail": {
      "rotation": [
       "0",
-      "0 + math.sin((query.anim_time / 2.0) * 360 + 0.0) * 6",
+      "0.0 + math.sin(query.anim_time / 2.88 * 360 + 0.0) * 8",
       "0"
      ]
     },
     "tail_tip": {
      "rotation": [
       "0",
-      "0 + math.sin((query.anim_time / 2.0) * 360 + 45) * 8",
+      "0.0 + math.sin(query.anim_time / 2.88 * 360 + 0.0) * 6",
       "0"
      ]
     },
-    "arm_left": {
+    "shield": {
      "rotation": [
-      "0 + math.sin((query.anim_time / 2.0) * 360 + 0.0) * 3",
-      "0",
-      "0"
-     ]
-    },
-    "arm_right": {
-     "rotation": [
-      "0 + math.sin((query.anim_time / 2.0) * 360 + 180) * 3",
+      "0.0 + math.sin(query.anim_time / 2.88 * 360 + 90) * 1.5",
       "0",
       "0"
      ]
@@ -51,51 +58,51 @@
   },
   "animation.wargreymon.walk": {
    "loop": true,
-   "animation_length": 0.8,
+   "animation_length": 1.08,
    "bones": {
+    "body": {
+     "position": [
+      0,
+      "math.abs(math.sin(query.anim_time / 1.08 * 360)) * 0.6",
+      0
+     ],
+     "rotation": [
+      "0",
+      "0.0 + math.sin(query.anim_time / 1.08 * 360 + 0.0) * 3",
+      "0"
+     ]
+    },
+    "head": {
+     "rotation": [
+      "0.0 + math.sin(query.anim_time / 0.54 * 360 + 180) * 3",
+      "0",
+      "0"
+     ]
+    },
     "leg_left": {
      "rotation": [
-      "0 + math.sin((query.anim_time / 0.8) * 360 + 0.0) * 30.0",
+      "0.0 + math.sin(query.anim_time / 1.08 * 360 + 0.0) * 27.386127875258307",
       "0",
       "0"
      ]
     },
     "leg_right": {
      "rotation": [
-      "0 + math.sin((query.anim_time / 0.8) * 360 + 180) * 30.0",
+      "0.0 + math.sin(query.anim_time / 1.08 * 360 + 180) * 27.386127875258307",
       "0",
       "0"
      ]
     },
     "arm_left": {
      "rotation": [
-      "0 + math.sin((query.anim_time / 0.8) * 360 + 180) * 20.0",
+      "0.0 + math.sin(query.anim_time / 1.08 * 360 + 180) * 21.90890230020665",
       "0",
       "0"
      ]
     },
     "arm_right": {
      "rotation": [
-      "0 + math.sin((query.anim_time / 0.8) * 360 + 0.0) * 20.0",
-      "0",
-      "0"
-     ]
-    },
-    "body": {
-     "position": [
-      "0",
-      "0 + math.sin((query.anim_time / 0.4) * 360 + 0.0) * 0.5",
-      "0"
-     ],
-     "rotation": [
-      "0",
-      "0",
-      "0 + math.sin((query.anim_time / 0.8) * 360 + 0.0) * 3"
-     ]
-    },
-    "head": {
-     "rotation": [
-      "0 + math.sin((query.anim_time / 0.4) * 360 + 0.0) * 3",
+      "0.0 + math.sin(query.anim_time / 1.08 * 360 + 0.0) * 21.90890230020665",
       "0",
       "0"
      ]
@@ -103,14 +110,7 @@
     "tail": {
      "rotation": [
       "0",
-      "0 + math.sin((query.anim_time / 0.8) * 360 + 0.0) * 10",
-      "0"
-     ]
-    },
-    "tail_tip": {
-     "rotation": [
-      "0",
-      "0 + math.sin((query.anim_time / 0.8) * 360 + 60) * 12",
+      "0.0 + math.sin(query.anim_time / 1.08 * 360 + 90) * 12",
       "0"
      ]
     }
@@ -118,106 +118,106 @@
   },
   "animation.wargreymon.attack": {
    "loop": false,
-   "animation_length": 0.4,
+   "animation_length": 0.6,
    "bones": {
     "body": {
      "rotation": {
-      "0.0": [
-       0,
-       0,
-       0
-      ],
-      "0.12": [
-       12,
-       0,
-       0
-      ],
-      "0.4": [
-       0,
-       0,
-       0
-      ]
-     }
-    },
-    "head": {
-     "rotation": {
-      "0.0": [
-       0,
-       0,
-       0
-      ],
-      "0.1": [
-       -15,
-       0,
-       0
-      ],
-      "0.2": [
-       10,
-       0,
-       0
-      ],
-      "0.4": [
-       0,
-       0,
-       0
-      ]
-     }
-    },
-    "arm_left": {
-     "rotation": {
-      "0.0": [
-       0,
-       0,
-       0
-      ],
-      "0.12": [
-       -60,
-       0,
-       -10
-      ],
-      "0.4": [
-       0,
-       0,
-       0
-      ]
+      "0.0": {
+       "post": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.18": {
+       "post": [
+        0.0,
+        -15.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.36": {
+       "post": [
+        8.0,
+        20.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.6": {
+       "post": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      }
      }
     },
     "arm_right": {
      "rotation": {
-      "0.0": [
-       0,
-       0,
-       0
-      ],
-      "0.12": [
-       -60,
-       0,
-       10
-      ],
-      "0.4": [
-       0,
-       0,
-       0
-      ]
+      "0.0": {
+       "post": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.18": {
+       "post": [
+        -110.0,
+        0.0,
+        10.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.36": {
+       "post": [
+        -20.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.6": {
+       "post": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      }
      }
     },
-    "tail": {
+    "head": {
      "rotation": {
-      "0.0": [
-       0,
-       0,
-       0
-      ],
-      "0.12": [
-       -10,
-       0,
-       0
-      ],
-      "0.4": [
-       0,
-       0,
-       0
-      ]
+      "0.0": {
+       "post": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.24": {
+       "post": [
+        -10.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.6": {
+       "post": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      }
      }
     }
    }

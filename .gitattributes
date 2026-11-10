@@ -3,3 +3,6 @@
 # are changed when only line endings change.
 src/generated/**/.cache/* text eol=lf
 src/generated/**/*.json text eol=lf
+
+# Scripts do Windows precisam de CRLF para o cmd funcionar direito
+*.bat text eol=crlf

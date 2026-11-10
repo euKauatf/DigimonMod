@@ -15,7 +15,9 @@
     "frost_walker": true
   },
   "attacks": [
-    "digimonaurity:howling_blaster"
+    "digimonaurity:howling_blaster",
+    "digimonaurity:slamming_attack",
+    "digimonaurity:frost_howl"
   ],
   "requires": [
     "digimonaurity:territory_boss"

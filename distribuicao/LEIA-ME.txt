@@ -1,0 +1,94 @@
+=====================================================================
+                 DIGIMON AURITY para Minecraft 26.3
+              Guia de instalação (para você e seus amigos)
+=====================================================================
+
+Neste pacote há uma pasta "mods" com DOIS arquivos:
+  - digimonaurity-X.X.X.jar   -> o mod
+  - geckolib-neoforge-26.3-X.X.X.jar -> biblioteca de modelos que o mod usa
+Os dois são obrigatórios.
+
+
+---------------------------------------------------------------------
+ 1. INSTALAR (uma vez só, em cada computador)
+---------------------------------------------------------------------
+
+ 1) Tenha o Minecraft Java Edition original e rode a versão 26.3
+    pelo launcher pelo menos uma vez.
+
+ 2) Baixe o instalador do NeoForge para a versão 26.3:
+       https://neoforged.net
+    (procure a versão que começa com 26.3, por exemplo 26.3.0.99
+     ou mais nova).
+
+ 3) Abra o instalador (.jar), deixe marcado "Install client" e
+    clique em OK.
+
+ 4) Abra o launcher do Minecraft. Vai aparecer um perfil "NeoForge".
+    Escolha ele, clique em Jogar uma vez e feche o jogo.
+    (isso cria a pasta "mods")
+
+ 5) Abra a pasta mods:
+       aperte Windows + R, digite   %appdata%\.minecraft\mods
+       e aperte Enter.
+
+ 6) Copie para lá os DOIS arquivos .jar da pasta "mods" deste pacote.
+
+ 7) Abra o Minecraft com o perfil NeoForge. Pronto!
+
+
+---------------------------------------------------------------------
+ 2. JOGAR JUNTOS
+---------------------------------------------------------------------
+
+ IMPORTANTE: todo mundo precisa ter EXATAMENTE os mesmos arquivos
+ na pasta mods (mesma versão do mod e do GeckoLib).
+
+ * Na mesma casa / mesmo Wi-Fi (mais fácil):
+     - Quem vai hospedar entra no mundo.
+     - Aperta Esc -> "Abrir para LAN" -> "Iniciar mundo em LAN".
+     - Os amigos vão em "Multijogador": o mundo aparece sozinho na lista.
+
+ * Pela internet:
+     - Opção A: um servidor NeoForge 26.3. Rode o mesmo instalador,
+       escolha "Install server", e coloque os dois .jar na pasta "mods"
+       do servidor. É preciso liberar a porta 25565 no roteador.
+     - Opção B: um serviço de "túnel" (por exemplo, playit.gg), que
+       evita mexer no roteador.
+
+
+---------------------------------------------------------------------
+ 3. COMO SE JOGA
+---------------------------------------------------------------------
+
+ Ao entrar num mundo, você escolhe seu Digimon: Agumon (fogo) ou
+ Gabumon (gelo). Você começa como bebê (Botamon ou Punimon).
+
+ Teclas (dá para trocar em Opções -> Controles -> Digimon):
+   Z, X, C ... ataques especiais (o quadradinho perto da hotbar mostra
+               a recarga; o símbolo indica o tipo:
+               o = projétil, < = sopro em leque, > = investida, @ = área)
+   V ......... digievoluir
+   B ......... desevoluir
+   F5 ........ ver seu Digimon em terceira pessoa
+   Clique .... ataque básico com as garras
+
+ Como evoluir:
+   - Ganhe XP derrotando criaturas e descobrindo biomas novos.
+   - O painel no canto superior esquerdo mostra o nível e o que falta.
+   - Champion: vença o Chefe de um Território (arena com altar ciano).
+   - Ultimate: MetalGreymon precisa de Cromo Digizoide (minere fundo,
+     abaixo da camada 0); WereGarurumon precisa uivar para a lua cheia.
+   - Mega: vença o Guardião de um Templo do Brasão (bem longe do spawn).
+   - O "Sinal" no painel apita quando há algo importante por perto.
+
+ Outras dicas:
+   - Digi-Eggs em ninhos dão a outra linha. Troque de linha numa
+     Incubadora (vidro, redstone, ovo de galinha e ferro).
+   - Digimon não usam armadura nem se beneficiam de espadas.
+   - Formas grandes gastam mais comida. Os Megas voam (pulo duplo),
+     mas voar dá muita fome.
+   - Morreu como Champion ou acima? Volta como Rookie e fica alguns
+     minutos sem poder evoluir.
+
+ Divirtam-se!

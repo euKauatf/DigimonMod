@@ -6,15 +6,12 @@ import com.digimonaurity.DigimonAurity;
 import com.digimonaurity.digimon.DigimonAttack;
 import com.digimonaurity.digimon.DigimonForm;
 import com.digimonaurity.digimon.PlayerDigimon;
-import com.digimonaurity.entity.DigimonProjectile;
 import com.digimonaurity.network.DigimonNetwork;
 import com.digimonaurity.registry.DigimonRegistries;
 
 import net.minecraft.core.Holder;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -61,12 +58,7 @@ public final class DigimonCombat {
         }
         cooldowns.start(slot, now, attack.cooldown(), GLOBAL_COOLDOWN);
 
-        player.level().addFreshEntity(DigimonProjectile.shoot(player, attack));
-        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), switch (attack.element()) {
-            case FIRE -> SoundEvents.BLAZE_SHOOT;
-            case BUBBLE -> SoundEvents.BUBBLE_COLUMN_UPWARDS_INSIDE;
-            default -> SoundEvents.SNOW_GOLEM_SHOOT;
-        }, SoundSource.PLAYERS, 0.8f, 1.2f);
+        AttackExecutor.execute(player, attack);
 
         PacketDistributor.sendToPlayer(player, new DigimonNetwork.CooldownStarted(slot, attack.cooldown(), GLOBAL_COOLDOWN));
         PacketDistributor.sendToPlayersTrackingEntityAndSelf(player, new DigimonNetwork.AttackAnimation(player.getId()));

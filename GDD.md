@@ -75,6 +75,9 @@ Foco em um jogador; regras de multiplayer valem quando ele entrar.
 - Kit por estágio: Fresh/In-Training 1 especial; Rookie 2; Champion+ 3.
 - Recarga própria por ataque **+ recarga global curta**.
 - Identidade: Agumon = fogo, dano direto, curta/média distância; Gabumon = gelo, controle (lentidão/congelamento), mobilidade.
+- **Tipos de ataque:** projétil, sopro em cone (curto alcance, vários alvos), investida (avança acertando o caminho) e onda de área (acerta e empurra ao redor). Selvagens usam só o projétil.
+- **Kits:** Fresh/In-Training: Bubble Blow. Agumon: Pepper Breath, Sharp Claw. Greymon: Nova Blast, Great Horn, Mega Flame. MetalGreymon: Giga Destroyer, Trident Arm, Metal Inferno. WarGreymon: Terra Force, Great Tornado, Mega Claw. Gabumon: Blue Blaster, Petit Horn. Garurumon: Howling Blaster, Slamming Attack, Uivo Gélido. WereGarurumon: Garuru Kick, Wolf Claw, Chute da Lua Cheia. MetalGarurumon: Garuru Tomahawk, Cocytus Breath, Muralha de Gelo.
+- Armaduras não podem ser vestidas; armas na mão não somam dano (ferramentas continuam minerando).
 
 ### 3.6 XP e inimigos
 - Mobs vanilla continuam no mundo e dão **pouco** XP.

@@ -58,6 +58,16 @@ public final class AttackHud {
             graphics.outline(x, y, SIZE, SIZE, 0xFF202020);
 
             float remaining = ClientCooldowns.remaining(slot, now, partial);
+            if (attack != null && remaining <= 0) {
+                // Símbolo do tipo: o projétil, > investida, < sopro em cone, @ área
+                String glyph = switch (attack.type()) {
+                    case PROJECTILE -> "o";
+                    case DASH -> ">";
+                    case CONE -> "<";
+                    case AREA -> "@";
+                };
+                graphics.centeredText(mc.font, glyph, x + SIZE / 2, y + 6, 0xFF202020);
+            }
             if (remaining > 0) {
                 int shade = Math.round((SIZE - 4) * remaining);
                 graphics.fill(x + 2, y + 2, x + SIZE - 2, y + 2 + shade, 0xC0000000);

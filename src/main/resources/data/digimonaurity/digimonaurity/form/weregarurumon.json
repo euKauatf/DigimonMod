@@ -1,8 +1,25 @@
 {
   "stage": "ultimate",
-  "body": { "width": 0.9, "height": 2.25, "eye_height": 2.0 },
+  "body": {
+    "width": 1.2,
+    "height": 3.0,
+    "eye_height": 2.7
+  },
   "min_level": 30,
-  "stats": { "max_health": 44, "basic_damage": 10.0, "speed": 1.2, "hunger_drain": 0.006, "cold_resistance": 1.0, "frost_walker": true },
-  "attacks": ["digimonaurity:garuru_kick"],
-  "requires": ["digimonaurity:full_moon"]
+  "stats": {
+    "max_health": 44,
+    "basic_damage": 10.0,
+    "speed": 1.2,
+    "hunger_drain": 0.006,
+    "cold_resistance": 1.0,
+    "frost_walker": true
+  },
+  "attacks": [
+    "digimonaurity:garuru_kick",
+    "digimonaurity:wolf_claw",
+    "digimonaurity:full_moon_kick"
+  ],
+  "requires": [
+    "digimonaurity:full_moon"
+  ]
 }

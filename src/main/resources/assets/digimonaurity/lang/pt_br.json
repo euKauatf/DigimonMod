@@ -109,5 +109,21 @@
   "message.digimonaurity.crest_obtained": "Você conquistou o %s!",
   "message.digimonaurity.guardian_appeared": "O Guardião do Brasão despertou!",
   "message.digimonaurity.too_hungry_to_fly": "Com fome demais para voar!",
-  "hud.digimonaurity.sense.temple": "Sinal: Templo do Brasão"
+  "hud.digimonaurity.sense.temple": "Sinal: Templo do Brasão",
+  "attack.digimonaurity.sharp_claw": "Sharp Claw",
+  "attack.digimonaurity.great_horn": "Great Horn",
+  "attack.digimonaurity.mega_flame": "Mega Flame",
+  "attack.digimonaurity.trident_arm": "Trident Arm",
+  "attack.digimonaurity.metal_inferno": "Metal Inferno",
+  "attack.digimonaurity.great_tornado": "Great Tornado",
+  "attack.digimonaurity.mega_claw": "Mega Claw",
+  "attack.digimonaurity.petit_horn": "Petit Horn",
+  "attack.digimonaurity.slamming_attack": "Slamming Attack",
+  "attack.digimonaurity.frost_howl": "Uivo Gélido",
+  "attack.digimonaurity.wolf_claw": "Wolf Claw",
+  "attack.digimonaurity.full_moon_kick": "Chute da Lua Cheia",
+  "attack.digimonaurity.garuru_tomahawk": "Garuru Tomahawk",
+  "attack.digimonaurity.ice_wall": "Muralha de Gelo",
+  "message.digimonaurity.no_armor": "Digimon não usam armadura: ela voltou para o inventário.",
+  "message.digimonaurity.no_weapons": "Digimon não usam armas: lute com seus ataques (Z, X, C) e garras!"
 }

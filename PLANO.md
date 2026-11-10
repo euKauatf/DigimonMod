@@ -30,7 +30,7 @@
 | **6** ✅ | **Digimon selvagens** | Selvagens com IA simples, spawn por bioma, digievolução no meio da luta, teto por região |
 | **7** ✅ | **Marcos e estruturas** | Território de chefe (marco do Champion), Ninho de Digi-Egg, incubadora e troca de linha, sentido digital |
 | **8** ✅ | **Ultimate e Mega** | Marcos do Ultimate (metal das profundezas, lua cheia), Templo do Brasão, voo dos Megas |
-| **9** | **Polimento e teste com amigos** | Balanceamento, efeitos, sons, sessão multiplayer de teste |
+| **9** 🔧 | **Polimento e teste com amigos** (kits, armas/armaduras e pacote prontos; falta jogar com amigos e ajustar balanceamento) | Balanceamento, efeitos, sons, sessão multiplayer de teste |
 
 **Depois do MVP:** Omnimon → ramos alternativos.
 
@@ -43,6 +43,7 @@
 ## Ferramentas do projeto
 
 - `compilar.bat` — gera o mod em `build\libs\`.
+- `empacotar.bat` — gera `distribuicao\mods\` (mod + GeckoLib) para enviar aos amigos, junto com `distribuicao\LEIA-ME.txt`.
 - `jogar_teste.bat` — abre um Minecraft de teste com o mod (sem launcher).
 - `tools/gerar_modelos.py` — gera modelos, texturas e animações dos Digimon.
 - `tools/visualizar.py <nome>` — cria uma prévia em `tools/previas/`.
