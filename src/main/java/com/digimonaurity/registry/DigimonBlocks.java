@@ -58,6 +58,10 @@ public final class DigimonBlocks {
             p -> new DigiEggBlock(DigimonAurity.id("gabumon"), p),
             p -> p.mapColor(MapColor.COLOR_LIGHT_BLUE).strength(-1f, 3600000f).lightLevel(s -> 7).noOcclusion());
 
+    public static final DeferredBlock<DigiEggBlock> VEEMON_DIGIEGG = BLOCKS.registerBlock("veemon_digiegg",
+            p -> new DigiEggBlock(DigimonAurity.id("veemon"), p),
+            p -> p.mapColor(MapColor.COLOR_BLUE).strength(-1f, 3600000f).lightLevel(s -> 7).noOcclusion());
+
     public static final DeferredBlock<IncubatorBlock> INCUBATOR = BLOCKS.registerBlock("incubator",
             IncubatorBlock::new, p -> p.mapColor(MapColor.METAL).strength(3f, 6f).sound(SoundType.METAL).lightLevel(s -> 6));
 
@@ -66,6 +70,7 @@ public final class DigimonBlocks {
     public static final DeferredItem<BlockItem> CREST_PEDESTAL_ITEM = ITEMS.registerSimpleBlockItem("crest_pedestal", CREST_PEDESTAL);
     public static final DeferredItem<BlockItem> AGUMON_DIGIEGG_ITEM = ITEMS.registerSimpleBlockItem("agumon_digiegg", AGUMON_DIGIEGG);
     public static final DeferredItem<BlockItem> GABUMON_DIGIEGG_ITEM = ITEMS.registerSimpleBlockItem("gabumon_digiegg", GABUMON_DIGIEGG);
+    public static final DeferredItem<BlockItem> VEEMON_DIGIEGG_ITEM = ITEMS.registerSimpleBlockItem("veemon_digiegg", VEEMON_DIGIEGG);
 
     /** Marco do MetalGreymon; cai ao minerar minérios abaixo da camada 0. */
     public static final DeferredItem<ChromeDigizoidItem> CHROME_DIGIZOID =
@@ -85,6 +90,7 @@ public final class DigimonBlocks {
             () -> new PoiType(ImmutableSet.<net.minecraft.world.level.block.state.BlockState>builder()
                     .addAll(AGUMON_DIGIEGG.get().getStateDefinition().getPossibleStates())
                     .addAll(GABUMON_DIGIEGG.get().getStateDefinition().getPossibleStates())
+                    .addAll(VEEMON_DIGIEGG.get().getStateDefinition().getPossibleStates())
                     .build(), 0, 1));
 
     // ------------------------------------------------- geração de mundo
@@ -120,11 +126,16 @@ public final class DigimonBlocks {
             event.accept(CREST_PEDESTAL_ITEM);
             event.accept(AGUMON_DIGIEGG_ITEM);
             event.accept(GABUMON_DIGIEGG_ITEM);
+            event.accept(VEEMON_DIGIEGG_ITEM);
         }
     }
 
     /** Ovo correspondente a uma linha (para o radar ignorar ovos de linhas que o jogador já tem). */
     public static Block eggFor(net.minecraft.resources.Identifier line) {
-        return line.getPath().equals("gabumon") ? GABUMON_DIGIEGG.get() : AGUMON_DIGIEGG.get();
+        return switch (line.getPath()) {
+            case "gabumon" -> GABUMON_DIGIEGG.get();
+            case "veemon" -> VEEMON_DIGIEGG.get();
+            default -> AGUMON_DIGIEGG.get();
+        };
     }
 }

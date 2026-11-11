@@ -1,0 +1,7 @@
+{
+  "stage": "in_training",
+  "body": { "width": 0.6, "height": 0.8, "eye_height": 0.6 },
+  "min_level": 3,
+  "stats": { "max_health": 14, "basic_damage": 1.75, "speed": 1.0 },
+  "attacks": ["digimonaurity:bubble_blow"]
+}

@@ -1,0 +1,8 @@
+{
+  "stage": "mega",
+  "body": { "width": 2.2, "height": 2.9, "eye_height": 2.2 },
+  "min_level": 50,
+  "stats": { "max_health": 66, "basic_damage": 14.0, "speed": 1.15, "hunger_drain": 0.008, "flight": true },
+  "attacks": ["digimonaurity:positron_laser", "digimonaurity:mega_death", "digimonaurity:imperial_claw"],
+  "requires": ["digimonaurity:crest"]
+}

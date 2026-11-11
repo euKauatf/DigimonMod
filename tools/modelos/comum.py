@@ -9,9 +9,19 @@ import os
 import subprocess
 import sys
 
-SKILL = r"D:\FerramentasMinecraft\skills\modelos-minecraft"
-PY = r"D:\FerramentasMinecraft\venv\Scripts\python.exe"
-REFS = r"D:\FerramentasMinecraft\referencias"
+def _base_ferramentas():
+    """Pasta das ferramentas: D:\\FerramentasMinecraft no PC, C:\\FerramentasMinecraft no notebook
+    (ou a variável de ambiente FERRAMENTAS_MINECRAFT)."""
+    for p in (os.environ.get("FERRAMENTAS_MINECRAFT"), r"D:\FerramentasMinecraft", r"C:\FerramentasMinecraft"):
+        if p and os.path.isdir(p):
+            return p
+    return r"C:\FerramentasMinecraft"
+
+
+BASE = _base_ferramentas()
+SKILL = os.path.join(BASE, "skills", "modelos-minecraft")
+PY = os.path.join(BASE, "venv", "Scripts", "python.exe")
+REFS = os.path.join(BASE, "referencias")
 sys.path.insert(0, os.path.join(SKILL, "scripts"))
 
 from mcmodel import *  # noqa: E402,F401,F403

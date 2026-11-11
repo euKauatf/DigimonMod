@@ -1,0 +1,6 @@
+{
+  "biomes": ["minecraft:plains", "minecraft:meadow", "minecraft:forest", "minecraft:flower_forest"],
+  "line": "digimonaurity:veemon",
+  "form": "digimonaurity:demiveemon",
+  "weight": 6
+}

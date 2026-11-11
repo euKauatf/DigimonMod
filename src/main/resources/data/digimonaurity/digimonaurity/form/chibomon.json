@@ -1,0 +1,7 @@
+{
+  "stage": "fresh",
+  "body": { "width": 0.5, "height": 0.5, "eye_height": 0.35 },
+  "min_level": 1,
+  "stats": { "max_health": 10, "basic_damage": 1.0, "speed": 0.9 },
+  "attacks": ["digimonaurity:bubble_blow"]
+}

@@ -1,0 +1,213 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "digimonaurity:block/veemon_digiegg",
+    "egg": "digimonaurity:block/veemon_digiegg"
+  },
+  "elements": [
+    {
+      "from": [
+        5,
+        0,
+        5
+      ],
+      "to": [
+        11,
+        6,
+        11
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5,
+            8,
+            11,
+            14
+          ],
+          "texture": "#egg"
+        },
+        "south": {
+          "uv": [
+            5,
+            8,
+            11,
+            14
+          ],
+          "texture": "#egg"
+        },
+        "east": {
+          "uv": [
+            5,
+            8,
+            11,
+            14
+          ],
+          "texture": "#egg"
+        },
+        "west": {
+          "uv": [
+            5,
+            8,
+            11,
+            14
+          ],
+          "texture": "#egg"
+        },
+        "up": {
+          "uv": [
+            5,
+            8,
+            11,
+            14
+          ],
+          "texture": "#egg"
+        },
+        "down": {
+          "uv": [
+            5,
+            8,
+            11,
+            14
+          ],
+          "texture": "#egg"
+        }
+      }
+    },
+    {
+      "from": [
+        5.5,
+        6,
+        5.5
+      ],
+      "to": [
+        10.5,
+        8,
+        10.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5,
+            5,
+            10,
+            8
+          ],
+          "texture": "#egg"
+        },
+        "south": {
+          "uv": [
+            5,
+            5,
+            10,
+            8
+          ],
+          "texture": "#egg"
+        },
+        "east": {
+          "uv": [
+            5,
+            5,
+            10,
+            8
+          ],
+          "texture": "#egg"
+        },
+        "west": {
+          "uv": [
+            5,
+            5,
+            10,
+            8
+          ],
+          "texture": "#egg"
+        },
+        "up": {
+          "uv": [
+            5,
+            5,
+            10,
+            8
+          ],
+          "texture": "#egg"
+        },
+        "down": {
+          "uv": [
+            5,
+            5,
+            10,
+            8
+          ],
+          "texture": "#egg"
+        }
+      }
+    },
+    {
+      "from": [
+        6.5,
+        8,
+        6.5
+      ],
+      "to": [
+        9.5,
+        9,
+        9.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            2,
+            9,
+            4
+          ],
+          "texture": "#egg"
+        },
+        "south": {
+          "uv": [
+            6,
+            2,
+            9,
+            4
+          ],
+          "texture": "#egg"
+        },
+        "east": {
+          "uv": [
+            6,
+            2,
+            9,
+            4
+          ],
+          "texture": "#egg"
+        },
+        "west": {
+          "uv": [
+            6,
+            2,
+            9,
+            4
+          ],
+          "texture": "#egg"
+        },
+        "up": {
+          "uv": [
+            6,
+            2,
+            9,
+            4
+          ],
+          "texture": "#egg"
+        },
+        "down": {
+          "uv": [
+            6,
+            2,
+            9,
+            4
+          ],
+          "texture": "#egg"
+        }
+      }
+    }
+  ]
+}

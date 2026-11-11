@@ -1,0 +1,7 @@
+{
+  "stage": "rookie",
+  "body": { "width": 0.8, "height": 1.5, "eye_height": 1.2 },
+  "min_level": 6,
+  "stats": { "max_health": 22, "basic_damage": 3.5, "speed": 1.05 },
+  "attacks": ["digimonaurity:vee_headbutt", "digimonaurity:boom_boom_punch"]
+}

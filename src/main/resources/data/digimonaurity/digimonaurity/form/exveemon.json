@@ -1,0 +1,8 @@
+{
+  "stage": "champion",
+  "body": { "width": 1.2, "height": 2.7, "eye_height": 2.3 },
+  "min_level": 15,
+  "stats": { "max_health": 34, "basic_damage": 6.5, "speed": 1.05, "hunger_drain": 0.004, "glide": true },
+  "attacks": ["digimonaurity:vee_laser", "digimonaurity:strong_crush", "digimonaurity:critical_crunch"],
+  "requires": ["digimonaurity:territory_boss"]
+}

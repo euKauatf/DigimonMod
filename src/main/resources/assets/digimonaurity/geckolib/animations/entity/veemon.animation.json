@@ -1,0 +1,226 @@
+{
+ "format_version": "1.8.0",
+ "animations": {
+  "animation.veemon.idle": {
+   "loop": true,
+   "animation_length": 2.16,
+   "bones": {
+    "body": {
+     "position": [
+      "0",
+      "0.0 + math.sin(query.anim_time / 2.16 * 360 + 0.0) * 0.25",
+      "0"
+     ]
+    },
+    "head": {
+     "rotation": [
+      "0.0 + math.sin(query.anim_time / 2.16 * 360 + 90) * 2.5",
+      "0",
+      "0"
+     ]
+    },
+    "arm_left": {
+     "rotation": [
+      "0",
+      "0",
+      "-2 + math.sin(query.anim_time / 2.16 * 360 + 0.0) * 3"
+     ]
+    },
+    "arm_right": {
+     "rotation": [
+      "0",
+      "0",
+      "2 + math.sin(query.anim_time / 2.16 * 360 + 180) * 3"
+     ]
+    },
+    "tail": {
+     "rotation": [
+      "0",
+      "0.0 + math.sin(query.anim_time / 2.16 * 360 + 0.0) * 8",
+      "0"
+     ]
+    },
+    "tail_tip": {
+     "rotation": [
+      "0",
+      "0.0 + math.sin(query.anim_time / 2.16 * 360 + 60) * 6",
+      "0"
+     ]
+    }
+   }
+  },
+  "animation.veemon.walk": {
+   "loop": true,
+   "animation_length": 0.81,
+   "bones": {
+    "body": {
+     "position": [
+      0,
+      "math.abs(math.sin(query.anim_time / 0.81 * 360)) * 0.6",
+      0
+     ],
+     "rotation": [
+      "0",
+      "0.0 + math.sin(query.anim_time / 0.81 * 360 + 0.0) * 3",
+      "0"
+     ]
+    },
+    "head": {
+     "rotation": [
+      "0.0 + math.sin(query.anim_time / 0.405 * 360 + 180) * 3",
+      "0",
+      "0"
+     ]
+    },
+    "leg_left": {
+     "rotation": [
+      "0.0 + math.sin(query.anim_time / 0.81 * 360 + 0.0) * 31.622776601683796",
+      "0",
+      "0"
+     ]
+    },
+    "leg_right": {
+     "rotation": [
+      "0.0 + math.sin(query.anim_time / 0.81 * 360 + 180) * 31.622776601683796",
+      "0",
+      "0"
+     ]
+    },
+    "arm_left": {
+     "rotation": [
+      "0.0 + math.sin(query.anim_time / 0.81 * 360 + 180) * 25.29822128134704",
+      "0",
+      "0"
+     ]
+    },
+    "arm_right": {
+     "rotation": [
+      "0.0 + math.sin(query.anim_time / 0.81 * 360 + 0.0) * 25.29822128134704",
+      "0",
+      "0"
+     ]
+    },
+    "tail": {
+     "rotation": [
+      "0",
+      "0.0 + math.sin(query.anim_time / 0.81 * 360 + 90) * 12",
+      "0"
+     ]
+    },
+    "tail_tip": {
+     "rotation": [
+      "0",
+      "0.0 + math.sin(query.anim_time / 0.81 * 360 + 150) * 10",
+      "0"
+     ]
+    }
+   }
+  },
+  "animation.veemon.attack": {
+   "loop": false,
+   "animation_length": 0.45,
+   "bones": {
+    "body": {
+     "rotation": {
+      "0.0": {
+       "post": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.135": {
+       "post": [
+        0.0,
+        -15.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.27": {
+       "post": [
+        8.0,
+        20.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.45": {
+       "post": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      }
+     }
+    },
+    "arm_right": {
+     "rotation": {
+      "0.0": {
+       "post": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.135": {
+       "post": [
+        -110.0,
+        0.0,
+        10.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.27": {
+       "post": [
+        -20.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.45": {
+       "post": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      }
+     }
+    },
+    "head": {
+     "rotation": {
+      "0.0": {
+       "post": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.18": {
+       "post": [
+        -10.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.45": {
+       "post": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "lerp_mode": "catmullrom"
+      }
+     }
+    }
+   }
+  }
+ }
+}

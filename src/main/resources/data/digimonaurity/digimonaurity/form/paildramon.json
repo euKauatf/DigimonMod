@@ -1,0 +1,7 @@
+{
+  "stage": "ultimate",
+  "body": { "width": 1.4, "height": 3.2, "eye_height": 2.8 },
+  "min_level": 30,
+  "stats": { "max_health": 46, "basic_damage": 10.0, "speed": 1.1, "hunger_drain": 0.006, "glide": true },
+  "attacks": ["digimonaurity:desperado_blaster", "digimonaurity:double_claw", "digimonaurity:cross_barrage"]
+}

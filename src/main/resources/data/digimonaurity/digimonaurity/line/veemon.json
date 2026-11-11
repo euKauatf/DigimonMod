@@ -1,0 +1,13 @@
+{
+  "forms": [
+    "digimonaurity:chibomon",
+    "digimonaurity:demiveemon",
+    "digimonaurity:veemon",
+    "digimonaurity:exveemon",
+    "digimonaurity:paildramon",
+    "digimonaurity:imperialdramon"
+  ],
+  "starting_form": "digimonaurity:chibomon",
+  "starter": true,
+  "color": "#2C7ED0"
+}
